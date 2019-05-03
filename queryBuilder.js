@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.getJSON('https://chrisaped.github.io/demo_data.json', function(data) {
+  $.getJSON('demo_data.json', function(data) {
     data.forEach(function(user) {
       $('#users-table').append(`<tr><th scope="row">${user.id}</th><td>${user.name}</td></tr>`);
     });
