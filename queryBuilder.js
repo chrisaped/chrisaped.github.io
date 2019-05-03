@@ -21,6 +21,8 @@ $(document).ready(function() {
         onInitialize: function() {
           var that = this;
 
+          console.log('localStorage', localStorage);
+
           if (localStorage.demoData === undefined) {
             $.getJSON('demo_data.json', function(data) {
               localStorage.demoData = JSON.stringify(data);
