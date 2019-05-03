@@ -21,11 +21,8 @@ $(document).ready(function() {
         onInitialize: function() {
           var that = this;
 
-          console.log("HELLO");
-          $.getJSON('demo_data.json', function(data) {
-            var demoData = JSON.stringify(data);
-            console.log('demoData', demoData);
-            demoData.forEach(function(item) {
+          $.getJSON('https://chrisaped.github.io/demo_data.json', function(data) {
+            data.forEach(function(item) {
               that.addOption(item);
             });
           });
@@ -35,6 +32,13 @@ $(document).ready(function() {
         rule.$el.find('.rule-value-container input')[0].selectize.setValue(value);
       }
     }]
+  });
+
+  $('#builder-basic').on('afterCreateRuleInput.queryBuilder', function(e, rule) {
+    if (rule.filter.plugin == 'selectize') {
+      rule.$el.find('.rule-value-container').css('min-width', '200px')
+        .find('.selectize-control').removeClass('form-control');
+    }
   });
 
   $('#btn-reset').on('click', function() {

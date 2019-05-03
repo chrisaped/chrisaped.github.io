@@ -1,57 +1,77 @@
 [
 	{
-		"user_id": 1,
-		"name": "users.create.success",
-		"date": "2019/04/12"
+		"id": 1,
+		"name": "John Wayne",
+    "events": [
+		  {
+				"name": "users.create.success",
+			  "date": "2019/04/12"
+			},
+			{
+				"name": "purchases.create",
+				"date": "2019/04/14"
+			},
+			{
+				"name": "dreams.create.success",
+				"date": "2019/04/12"
+			},
+			{
+				"user_id": 1,
+				"name": "dreams.create.success",
+				"date": "2019/04/21"
+			}
+		]
 	},
 	{
-		"user_id": 2,
-		"name": "users.create.success",
-		"date": "2019/04/23"
+		"id": 2,
+		"name": "Katharine Hepburn",
+		"events": [
+			{
+				"name": "users.create.success",
+				"date": "2019/04/23"
+			},
+			{
+				"name": "dreams.create.failure",
+				"date": "2019/04/25"
+			}
+		]
 	},
 	{
-		"user_id": 3,
-		"name": "users.create.success",
-		"date": "2019/03/12"
+		"id": 3,
+		"name": "Ella Fitzgerald",
+		"events": [
+			{
+				"name": "users.create.success",
+				"date": "2019/03/12"
+			},
+			{
+				"name": "dreams.create.success",
+				"date": "2019/03/19"
+			}
+		]
 	},
 	{
-		"user_id": 4,
-		"name": "users.create.success",
-		"date": "2019/05/01"
+		"id": 4,
+		"name": "Peter O'Toole",
+		"events": [
+			{
+				"name": "users.create.success",
+				"date": "2019/05/01"
+			}
+		]
 	},
 	{
-		"user_id": 5,
-		"name": "users.create.success",
-		"date": "2018/04/12"
-	},
-	{
-		"user_id": 1,
-		"name": "dreams.create.success",
-		"date": "2019/04/12"
-	},
-	{
-		"user_id": 1,
-		"name": "dreams.create.success",
-		"date": "2019/04/21"
-	},
-	{
-		"user_id": 3,
-		"name": "dreams.create.success",
-		"date": "2019/03/19"
-	},
-	{
-		"user_id": 5,
-		"name": "dreams.create.success",
-		"date": "2018/06/12"
-	},
-	{
-		"user_id": 1,
-		"name": "purchases.create",
-		"date": "2019/04/14"
-	},
-	{
-		"user_id": 2,
-		"name": "dreams.create.failure",
-		"date": "2019/04/25"
+		"id": 5,
+		"name": "Frank Sinatra",
+		"events": [
+			{
+				"name": "users.create.success",
+				"date": "2018/04/12"
+			},
+			{
+				"name": "dreams.create.success",
+				"date": "2018/06/12"
+			}
+		]
 	}
 ]
