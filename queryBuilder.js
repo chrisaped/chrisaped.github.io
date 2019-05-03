@@ -21,22 +21,14 @@ $(document).ready(function() {
         onInitialize: function() {
           var that = this;
 
-          console.log('localStorage', localStorage);
-
-          if (localStorage.demoData === undefined) {
-            $.getJSON('demo_data.json', function(data) {
-              localStorage.demoData = JSON.stringify(data);
-              console.log('data', data);
-              data.forEach(function(item) {
-                that.addOption(item);
-              });
-            });
-          }
-          else {
-            JSON.parse(localStorage.demoData).forEach(function(item) {
+          console.log("HELLO");
+          $.getJSON('demo_data.json', function(data) {
+            var demoData = JSON.stringify(data);
+            console.log('demoData', demoData);
+            demoData.forEach(function(item) {
               that.addOption(item);
             });
-          }
+          });
         }
       },
       valueSetter: function(rule, value) {
