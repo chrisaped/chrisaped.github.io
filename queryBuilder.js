@@ -28,7 +28,7 @@ $(document).ready(function() {
         onInitialize: function() {
           var that = this;
 
-          $.getJSON('https://chrisaped.github.io/demo_data.json', function(data) {
+          $.getJSON('demo_data.json', function(data) {
             data.forEach(function(user) {
               user.events.forEach(function(event) {
                 that.addOption(event);
